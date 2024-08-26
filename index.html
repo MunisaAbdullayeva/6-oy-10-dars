@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center p-10 flex-col gap-10 text-center items-center">
+
+    <div class="bg-base-300 p-10 flex items-center w-2/3 rounded-2xl border-2 border-primary shadow-lg shadow-cyan-400">
+      <input type="text" class="input input-primary rounded-e-none w-full">
+      <button class="btn btn-primary rounded-s-none">search</button>
+    </div>
+
+    <div
+      id="wrapper"
+      class="bg-base-300 font-mono relative min-h-44 w-2/3 mx-auto container rounded-2xl border-2 border-primary shadow-lg shadow-cyan-400"
+    >
+      <div class="w-full h-full absolute top-0 left-0 z-10">
+        <img
+          id="bgImage"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Nest_One_Tashkent.jpg/268px-Nest_One_Tashkent.jpg"
+          class="w-full h-full object-cover rounded-2xl"
+          alt=""
+        />
+      </div>
+      <div
+        class="w-full h-full absolute top-0 left-0 z-20 bg-slate-900 bg-opacity-75 rounded-2xl"
+      ></div>
+
+      <div class="relative z-30 flex flex-col gap-10 w-full h-full p-5">
+        <div class="text-right">
+          <p class="text-warning font-bold " id="city">City: Tashkent</p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center justify-between">
+            <div>
+              <div><img src="" alt="" id="weathericon"/></div>
+              <p class="text-primary text-xl font-bold" id="temp">Temperature: 39.9 °С</p>
+              <p class="text-accent text-sm font-semibold text-left" id="wind">Wind Speed: 4 km/h</p>
+            </div>
+
+            <div>
+              <p>
+                <span class="text-accent text-xl font-bold" id="time">Monday, 07:43 AM</span>
+                <p class="text-accent text-right " id="description">Partly Cloudy</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
